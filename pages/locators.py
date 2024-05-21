@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 
 
-class MainPageLocators:
+class BasePageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
 
 
@@ -15,3 +15,4 @@ class ProductPageLocators:
     PRODUCT_PRICE_ELEMENT = (By.CSS_SELECTOR, ".product_main .price_color")
     ADDED_PRODUCT_NAME_MESSAGE_ELEMENT = (By.CSS_SELECTOR, ".alert-success .alertinner strong")
     ADDED_PRODUCT_PRICE_MESSAGE_ELEMENT = (By.CSS_SELECTOR, ".alert-info .alertinner strong")
+    SUCCESS_MEESSAGE = (By.CSS_SELECTOR, ".alert-success")
